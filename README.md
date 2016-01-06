@@ -1,1 +1,2 @@
-# GiniClust
+# GiniClust V1.0
+
