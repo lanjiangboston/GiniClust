@@ -6,4 +6,10 @@ GiniClust is created and maintained by the Yuan Lab at DFCI.
 
 Contact Lan Jiang ( ljiang at jimmy.harvard.edu ) or Guo-Cheng Yuan( gcyuan at jimmy.harvard.edu )
 
+Introduction:
+
+Download the whole directory GiniClust_V1.zip, modify the workdir to where you like. Then just simply run each main function R script for each dataset to reproduce the figures generated in our manuscript.
+
 Publication is comming soon. 
+
+
