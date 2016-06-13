@@ -14,6 +14,6 @@ Download the zip file GiniClust_V1.zip, modify the #workdir to where you like. T
 
 Publication is under review.
 
-The source code is released under an open source license compliant with OSI (http://opensource.org/licenses).
+The source code is released under the MIT license (https://opensource.org/licenses/MIT).
 
 
