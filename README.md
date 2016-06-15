@@ -30,7 +30,7 @@ you can take a look at one of our test dataset:
 
 
 
-#### Usage 
+# Usage 
     Rscript Giniclust_Main.R [options]
 
 Options:
@@ -77,7 +77,7 @@ The other folder is the folder 'Libarary' , which includes all newly installed p
 Publication is in press.
 
 # Contact 
-Lan Jiang ( ljiang at jimmy dot harvard dot edu ) or Guo-Cheng Yuan( gcyuan at jimmy dot harvard dot edu )
+Lan Jiang ( lan_jiang at hms dot harvard dot edu ) or Guo-Cheng Yuan( gcyuan at jimmy dot harvard dot edu )
 
 # license
 The source code is released under the MIT license (https://opensource.org/licenses/MIT).
