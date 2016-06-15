@@ -18,11 +18,14 @@ For example, in R
 >ExprM.RawCounts  <- read.csv("Data_GBM.csv", sep=",", head=T)
 >ExprM.RawCounts[1:4,1:4]
 ```
+you can take a look at one of our test dataset:
 
-you can take a look at one of our test dataset:  
-
-
-![Image of data](https://drive.google.com/file/d/0B1039cl0AW0ebWVnVzJDb0ZqMEE/view)
+|Table   |MGH26 | MGH26.1 | MGH26.2 | MGH26.3|
+|------------ |------------| -------------|------------ | -------------|
+|1/2-SBSRNA4| 0      |47       |0       |0|
+|A1BG          | 41      |80       |3       |0|
+|A1BG-AS1        |0       |0       |0      |0|
+|A1CF            |0       |0       |0       |0|
 
 
 
