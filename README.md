@@ -77,7 +77,10 @@ The other folder is the folder 'Libarary' , which includes all newly installed p
 Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (in press)
 
 # Contact 
-Lan Jiang ( lan_jiang at hms dot harvard dot edu ) or Guo-Cheng Yuan( gcyuan at jimmy dot harvard dot edu )
+Lan Jiang ( lan_jiang at hms dot harvard dot edu ) or Guo-Cheng Yuan ( gcyuan at jimmy dot harvard dot edu )
 
 # license
 The source code is released under the MIT license (https://opensource.org/licenses/MIT).
+
+# implementation notes
+for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
