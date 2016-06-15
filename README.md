@@ -21,7 +21,7 @@ For example, in R
 
 you can take a look at one of our test dataset:  
 
-![Image of Yaktocat](https://www.dropbox.com/s/3ijo95y6yxlu1pi/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202016-06-15%2013.25.13.png?dl=0)
+![Image of Yaktocat](https://drive.google.com/open?id=0B1039cl0AW0ebWVnVzJDb0ZqMEE)
 
 
 
