@@ -36,11 +36,11 @@ Options:
 - -o CHARACTER or  --out=CHARACTER, output folder name [default= results]
 - -h or  --help, Show help message and exit
 
-For example, runnig GiniClust with 'Data_GBM.csv',
+For example, running GiniClust with 'Data_GBM.csv',
 ```sh
 $ Rscript GiniClust_Main.R -f Data_GBM.csv -t RNA-seq -o GBM_results
 ```
-runnig GiniClust with 'Data_qPCR.csv',
+running GiniClust with 'Data_qPCR.csv',
 ```sh
 $ Rscript GiniClust_Main.R -f Data_qPCR.csv -t qPCR -o  qPCR_results
 ```
