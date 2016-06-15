@@ -74,7 +74,7 @@ The other folder is the folder 'Libarary' , which includes all newly installed p
 
 
 # Publication 
-Publication is in press.
+Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (in press)
 
 # Contact 
 Lan Jiang ( lan_jiang at hms dot harvard dot edu ) or Guo-Cheng Yuan( gcyuan at jimmy dot harvard dot edu )
