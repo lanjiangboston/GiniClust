@@ -20,12 +20,8 @@ For example, in R
 ```
 
 you can take a look at one of our test dataset:  
-&   |MGH26 | MGH26.1 | MGH26.2 | MGH26.3
------------- |------------ | -------------|------------ | -------------
-1/2-SBSRNA4| 0      |47       |0       |0
-A1BG          | 41      |80       |3       |0
-A1BG-AS1        |0       |0       |0      |0
-A1CF            |0       |0       |0       |0
+
+![Image of Yaktocat](https://www.dropbox.com/s/3ijo95y6yxlu1pi/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202016-06-15%2013.25.13.png?dl=0)
 
 
 
