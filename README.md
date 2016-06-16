@@ -79,8 +79,8 @@ Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from s
 # Contact 
 Lan Jiang ( lan_jiang at hms dot harvard dot edu ) or Guo-Cheng Yuan ( gcyuan at jimmy dot harvard dot edu )
 
-# license
+# License
 The source code is released under the MIT license (https://opensource.org/licenses/MIT).
 
-# implementation notes
-for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
+# Implementation notes
+For MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
