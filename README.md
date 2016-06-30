@@ -95,4 +95,4 @@ The source code is released under the MIT license (https://opensource.org/licens
 # Troubleshooting
 For MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
 
-Some users have experienced errors installing MAST. Please visit the MAST website (https://github.com/RGLab/MAST) for instructions. 
+Some users have experienced errors installing MAST. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for instructions. 
