@@ -3,7 +3,6 @@
 GiniClust is a clustering method implemented in R for detecting rare cell types from large scale single cell gene expression data. It can be applied to data set come from different platform, such as multiplex qPCR data, tranditional single cell RNAseq or newly emerging UMI-based single cell RNAseq, such as inDrops and Drop-seq. GiniClust is created and maintained by the Yuan Lab at DFCI.
 
 
-
 # Preparation
 Download the zip file GiniClust.zip and unzip it.  The unzipped folder will contain one script 'Giniclust_Main.R', one folder 'Rfunction' including all functional R codes and two data samples 'Data_GBM.csv' and 'Data_qPCR.csv'.
 
@@ -28,6 +27,17 @@ you can take a look at one of our test dataset:
 |A1CF            |0       |0       |0       |0|
 
 
+# Rfunction
+- GiniClust_parameters.R: All the parameters used in Giniclust
+- GiniClust_packages.R: Installing and loading required packages
+- GiniClust_Preprocess.R: Preprocessing the input data
+- GiniClust_Filtering.R: Filtering preprocessed data
+- GiniClust_Fitting.R: LOESS curve fitting and selecting final genes which are used for clustering
+- GiniClust_Clustering.R: DBSCAN for clustering
+- GiniClust_tSNE.R: Visulization using tsne
+- DE_MAST.R: MAST analysis for RNA seq, which is used for identifing differential genes between rare cell types and other cells
+- DE_MAST_figures.R:  generating MAST figures
+- DE_t_test.R: t-test for qPCR data
 
 
 # Usage 
@@ -47,6 +57,8 @@ running GiniClust with 'Data_qPCR.csv',
 ```sh
 $ Rscript GiniClust_Main.R -f Data_qPCR.csv -t qPCR -o  qPCR_results
 ```
+
+
 # Results
 Two folders will be created automatically in the currently directory. 
 One is the output folder with a default or specified name, which includes all figures and tables in our manuscript.
@@ -84,3 +96,5 @@ The source code is released under the MIT license (https://opensource.org/licens
 
 # Troubleshooting
 For MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
+
+Some users have encountered errors due to problems with MAST installation. Please refer to the MAST package URL (https://github.com/RGLab/MAST) for help. 
