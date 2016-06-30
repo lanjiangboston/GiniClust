@@ -4,7 +4,7 @@ GiniClust is a clustering method implemented in R for detecting rare cell types 
 
 
 # Preparation
-Download the zip file GiniClust.zip and unzip it.  The unzipped folder contains one script 'Giniclust_Main.R', one folder 'Rfunction' including R scripts for all functions and two data samples 'Data_GBM.csv' and 'Data_qPCR.csv'.
+Download the zip file GiniClust.zip and unzip it.  The unzipped folder contains one script 'Giniclust_Main.R', one folder 'Rfunction' including R scripts for all functions and two data samples 'Data_GBM.csv' (an RNAseq dataset) and 'Data_qPCR.csv' (a qPCR dataset).
 
 Make sure 'Giniclust_Main.R', 'Rfunction' and input data are all saved in the same directory.
 
