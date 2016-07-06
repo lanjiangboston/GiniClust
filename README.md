@@ -94,7 +94,7 @@ Reference
 
 The GiniClust software was developped in support of a research project conducted at the GC Yuan Lac (Harvard University & DFCI). If you find it useful to your own investigations, please cite the following publication:
 
-Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (in press)
+Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (2016) 17:144 DOI: 10.1186/s13059-016-1010-4
 
 Contact
 -------
