@@ -47,9 +47,8 @@ def main():
         help='Name of the file to process')
     
     command = 'Rscript'
-    path2Rscript = path.join(getcwd(), 'GiniClust_Main.R')
-    #path2Rscript = pkg_resources.resource_string('PyGiniClust', 
-    #    'GiniClust_Main.R')
+    path2Rscript = pkg_resources.resource_string('PyGiniClust', 
+        'GiniClust_Main.R')
     args = parser.parse_args()
     
     print(args.input)
