@@ -1,6 +1,6 @@
-# GiniClust
+# PyGiniClust
 
-GiniClust is a clustering method implemented in R for detecting rare cell types from large-scale single-cell gene expression data. It can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. GiniClust is created and maintained by the Yuan Lab at DFCI.
+PyGiniClust is a clustering method implemented in R for detecting rare cell types from large-scale single-cell gene expression data. It can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. PyGiniClust is created and maintained by the Yuan Lab at DFCI.
 
 Preparation
 -----------
@@ -92,14 +92,16 @@ The second folder is the folder 'Library' , which includes all newly installed p
 Reference
 ---------
 
-The GiniClust software was developped in support of a research project conducted at the GC Yuan Lac (Harvard University & DFCI). If you find it useful to your own investigations, please cite the following publication:
+The PyGiniClust software was developped in support of a research project conducted at the GC Yuan Lab (Harvard University & DFCI). If you find it useful to your own investigations, please cite the following publication:
 
 Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (2016) 17:144 DOI: 10.1186/s13059-016-1010-4
 
-Contact
--------
+Attribution
+-----------
 
-Lan Jiang ( lan_jiang at hms dot harvard dot edu ) or Guo-Cheng Yuan ( gcyuan at jimmy dot harvard dot edu )
+Lan Jiang (lan_jiang at hms dot harvard dot edu) wrote the R scripts and wrote a draft to the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) contributed to the graphical user interface, reorganized the R packaging, fixed a few bugs therein and edited the README file. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface and edited the README file.
+
+Maintainers: Lan Jiang (lan_jiang at hms dot harvard dot edu) and Qian Zhu (qzhu at princeton dot edu).
 
 License
 ------
