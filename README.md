@@ -19,9 +19,9 @@ In addition, GiniClust relies on the following libraries:
 * ```Gooey```(version 0.9.2.3 or ulterior);
 * ```setuptools``` (version 24.0.2 or subsequent).
 
-Those packages should be automatically installed or upgraded via an installation of GiniClust via ```pip```, as follows:
+Those packages should be automatically installed or upgraded via a ```pip``` installation. For instance, to install ```Gooey```, proceed as follows:
 * start a terminal session;
-* run ```$ pip install GiniClust```.
+* run ```$ pip install Gooey --upgrade```.
 
 If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ```import gooey, pkg_resources```.
 
@@ -53,9 +53,9 @@ you can take a look at one of our test datasets (stored in the ```sample_data```
 Usage
 -----
 
-The simplest way to run GiniClust, is to:
+To run GiniClust, please download the GiniClust GitHub repository, unzip it and move to the extracted directory so that it becomes your current working directory. Then, proceed as follows:
 * start a terminal session;
-* run ```$ GiniClust```.
+* enter ```$ python GiniClust.py```.
 
 A graphical user interface will spring up and direct you into choosing a file to process from your arborescence of directories, specify the type of data at hand (qPCR or RNA-seq), along with the name of the folder where you would like to store GiniClust's output (see the section below for more information about those files). A screenshot is provided herewith:
 
