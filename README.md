@@ -21,7 +21,7 @@ Those packages should be automatically installed or upgraded via an installation
 * start a terminal session;
 * run ```$ pip install GiniClust```.
 
-If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ``ìmport gooey, pkg_resources```.
+If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ```import gooey, pkg_resources```.
 
 As for the R code at the core of much of GiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
 
