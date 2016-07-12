@@ -1,28 +1,32 @@
 # PyGiniClust
 
-PyGiniClust is a clustering method implemented in Python and R for detecting rare cell-types from large-scale single-cell gene expression data. It can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. PyGiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
+PyGiniClust is a clustering method implemented in Python and R for detecting rare cell-types from large-scale single-cell gene expression data. 
+
+PyGiniClust can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. 
+
+PyGiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
 
 Installation
 ------------
 
 Please ensure that you have Python 2.7 in your environment. The graphical user interface of PyGiniClust relies on ```wxPython```, a Python wrapper for the cross-platform wxWidgets API. Instructions on how to install ```wxPython``` are available on the corresponding website. On Fedora Linux, using ```pip``` at the command-line interface worked just fine:
+
 ```$ pip install wxPython```.
+
 In addition, PyGiniClust relies on the following libraries:
+* ```Gooey```(version 0.9.2.3 or ulterior);
+* ```pkg_resources```.
 
+Those packages should be automatically installed or upgraded via an installation of PyGiniClust via ```pip```, as follows:
+* start a terminal session;
+* run ```$ pip install PyGiniClust```.
+If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ``ìmport gooey, pkg_resources```.
 
-
-
-Preparation
------------
-
-Download the zip file GiniClust.zip and unzip it. The unzipped folder contains one script 'Giniclust_Main.R', one folder 'Rfunction' including R scripts for all functions and two data samples 'Data_GBM.csv' (RNAseq dataset) and 'Data_qPCR.csv' (qPCR dataset).
-
-Make sure 'Giniclust_Main.R', 'Rfunction' and input data are all saved in the same directory.
-
-Input File Format
+Input file format
 ----------------
 
-The input file is a gene expression matrix in csv format.
+The input file is a gene expression matrix in comma-separated value (csv) format.
+
 Specifically, for qPCR data, each entry is log2 gene expression level; for RNAseq data, each entry is UMI-Count/Cell or Raw-Read-Count/Cell. The first row contains cell IDs. The first column contains unique gene names. 
 
 For example, in R 
