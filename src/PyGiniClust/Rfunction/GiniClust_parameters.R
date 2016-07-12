@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 #########################################################
 ### All the parameters used in Giniclust
 #########################################################
