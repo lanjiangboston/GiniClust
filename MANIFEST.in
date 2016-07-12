@@ -1,9 +1,0 @@
-# Documentation
-include README
-
-# R scripts
-include src/GiniClust/GiniClust_Main.R.tar.gz
-recursive-include src/GiniClust/Rscripts *
-
-# Miscellaneous
-include LICENSE
