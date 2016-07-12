@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 ####################  MAST figures ####################      
 DE_MAST_figures <- function(rare.cells.list.all,cluster_lrTest.table,clustering_membership_r,out.folder,exprimentID){
   for(rare.cluster in names(rare.cells.list.all)){
