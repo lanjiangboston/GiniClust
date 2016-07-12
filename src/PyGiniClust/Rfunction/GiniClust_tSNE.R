@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 #################### Visulization using tsne #################### 
 GiniClust_tSNE <- function(data.type,c_membership,cell.cell.distance,perplexity,out.folder,exprimentID){
   if(data.type == 'RNA-seq'){
