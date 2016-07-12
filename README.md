@@ -22,6 +22,10 @@ Those packages should be automatically installed or upgraded via an installation
 * run ```$ pip install PyGiniClust```.
 If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ``ìmport gooey, pkg_resources```.
 
+As for the R code at the core of much of PyGiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
+
+Besides, some users might experience issues installing another of PyGiniClust's dependencies: the MAST R package. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for detailed instructions.
+
 Input file format
 ----------------
 
@@ -42,20 +46,6 @@ you can take a look at one of our test datasets:
 |A1BG          | 41      |80       |3       |0|
 |A1BG-AS1        |0       |0       |0      |0|
 |A1CF            |0       |0       |0       |0|
-
-
-R functions
------------
-- GiniClust_parameters.R: Parameter setting for Giniclust
-- GiniClust_packages.R: Installation, includiong loading additional R packages required for GiniClust
-- GiniClust_Preprocess.R: Preprocessing the input data
-- GiniClust_Filtering.R: Filtering the preprocessed data
-- GiniClust_Fitting.R: Normalizing the Gini index by LOESS curve fitting, selecting a subset of the genes for clustering
-- GiniClust_Clustering.R: Clustering the cells based on the selected genes using DBSCAN
-- GiniClust_tSNE.R: Visualization of the clustering results using t-SNE
-- DE_MAST.R: Differential gene expression analysis for RNAseq data using MAST
-- DE_MAST_figures.R: Generating MAST-like figures
-- DE_t_test.R: Differential gene expression analysis for qPCR data using t-test
 
 Usage
 -----
@@ -80,9 +70,8 @@ $ Rscript GiniClust_Main.R -f Data_qPCR.csv -t qPCR -o  qPCR_results
 Results
 -------
 
-Two folders will be created by GiniClust in the current directory. 
+The output directory specified by the user at the graphical user interface will contain the following files and directories: 
 
-The first one is the output folder which includes all the relevant figures and tables, namely:
 * Dataname_rawCounts.csv: the raw counts 
 * Dataname_normCounts.csv: the normalized counts
 * Dataname_gene.expression.matrix.RawCounts.filtered.csv: the raw counts after filtering 
@@ -101,7 +90,7 @@ The first one is the output folder which includes all the relevant figures and t
  - Dataname_RareCluster_diff_gene_overlap.pdf: Venn diagram for differentially expressed genes and high gini genes
  - Dataname_RareCluster_overlapgene_rawCounts_bar_plot.genename.pdf: barplot of rare cluster and major cluster for the overlap genes
 
-The second folder is the folder 'Library' , which includes all newly installed packages.
+Furthermore, a folder named 'Library' will be created, which includes a wealth of newly installed packages.
 
 Reference
 ---------
@@ -110,21 +99,19 @@ The PyGiniClust software was developped in support of a research project conduct
 
 Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (2016) 17:144 DOI: 10.1186/s13059-016-1010-4
 
-Attribution
------------
+Credits
+--------
 
 Lan Jiang (lan_jiang at hms dot harvard dot edu) wrote the R scripts and wrote a draft to the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging, fixed a few bugs therein and edited the README file. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface and edited the README file.
 
 Maintainers: Lan Jiang (lan_jiang at hms dot harvard dot edu) and Qian Zhu (qzhu at princeton dot edu).
 
+For more information on the biological motivations underlying this project, please contact Lan Jiang (lan_jiang at hms dot harvard dot edu) or Guo-Cheng Yuan (gcyan at jimmy dot harvard dot edu).
+
 License
-------
+-------
 
-The source code is released under the MIT license (https://opensource.org/licenses/MIT).
+Copyright 2016-2021 Lan Jiang and contributors.
 
-Troubleshooting
----------------
+PyGiniClust is free software made available under the MIT License. For details see the LICENSE file.
 
-For MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
-
-Some users have experienced errors installing MAST. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for instructions. 
