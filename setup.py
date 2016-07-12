@@ -39,7 +39,7 @@ setup(name = 'GiniClust',
       license = 'MIT License',
       
       platforms = ('Any',),
-      install_requires = ['Gooey>=0.9.2.3', 'pkg_resources', 'setuptools'],
+      install_requires = ['Gooey>=0.9.2.3', 'setuptools>=24.0.2'],
                           
       classifiers = ['Development Status :: 4 - Beta',
                      'Environment :: Console',
