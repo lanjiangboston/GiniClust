@@ -20,6 +20,7 @@ In addition, GiniClust relies on the following libraries:
 Those packages should be automatically installed or upgraded via an installation of GiniClust via ```pip```, as follows:
 * start a terminal session;
 * run ```$ pip install GiniClust```.
+
 If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ``ìmport gooey, pkg_resources```.
 
 As for the R code at the core of much of GiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
@@ -38,7 +39,7 @@ For example, in R
 >ExprM.RawCounts  <- read.csv("Data_GBM.csv", sep=",", head=T)
 >ExprM.RawCounts[1:4,1:4]
 ```
-you can take a look at one of our test datasets:
+you can take a look at one of our test datasets (stored in the ```sample_data``` folder within GiniClust's repository):
 
 |Table   |MGH26 | MGH26.1 | MGH26.2 | MGH26.3|
 |------------ |------------| -------------|------------ | -------------|
@@ -102,7 +103,7 @@ Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from s
 Credits
 --------
 
-Lan Jiang (lan_jiang at hms dot harvard dot edu) wrote the R scripts and wrote a draft to the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging, fixed a few bugs therein and edited the README file. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface and edited the README file.
+Lan Jiang (lan_jiang at hms dot harvard dot edu), the main developer of GiniClust, wrote the R scripts and started the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging, fixed a few bugs therein and edited the README file. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface and edited the README file.
 
 Maintainers: Lan Jiang (lan_jiang at hms dot harvard dot edu) and Qian Zhu (qzhu at princeton dot edu).
 
@@ -113,5 +114,5 @@ License
 
 Copyright 2016-2021 Lan Jiang and contributors.
 
-PyGiniClust is free software made available under the MIT License. For details see the LICENSE file.
+GiniClust is free software made available under the MIT License. For details see the LICENSE file.
 
