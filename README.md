@@ -4,6 +4,10 @@ GiniClust is a clustering method implemented in Python and R for detecting rare 
 
 GiniClust can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. 
 
+GiniClust comes with a graphical user interface:
+
+![alt tag](https://raw.githubusercontent.com/lanjiangboston/GiniClust/master/img/GiniClust_starting_screenshot.png)
+
 GiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
 
 Installation
