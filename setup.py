@@ -60,6 +60,7 @@ setup(name = 'GiniClust',
                    
       packages = ['GiniClust'],
       package_dir = {'GiniClust': 'src/PyGiniClust'},
+      include_package_data = True,
 
       keywords = "bioinformatics biology clustering genomics "
           "machine-learning outliers PCR qPCR RNASeq single-cell",
