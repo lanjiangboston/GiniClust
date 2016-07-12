@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-# PyGiniClust/src/PyGiniClust/__main__.py 
+# GiniClust/src/GiniClust/__main__.py 
 
 
 # Author: Gregory Giecold
@@ -18,21 +18,21 @@ import subprocess
 try:
     import wx
 except ImportError:
-    print('WARNING: PyGiniClust: Please install wxPython.')
+    print('WARNING: GiniClust: Please install wxPython.')
 
 from gooey import Gooey, GooeyParser
 import pkg_resources
 
 
 @Gooey(
-    program_name='PyGiniClust')
+    program_name='GiniClust')
 def main():
 
     parser = GooeyParser(
-        prog='PyGiniClust', 
+        prog='GiniClust', 
         description="Detecting rare cell-types from single-cell "
             "gene expression data", 
-        epilog="Contributors: Lan Jiang, "
+        epilog="Contributors: Lan Jiang (main developer), "
             "Qian Zhu and Gregory Giecold.\nFor further help or information, "
             "please contact us at lan_jian@hms.harvard.edu,"
             "qzhu@princeton.edu or ggiecold@jimmy.harvard.edu")
@@ -41,13 +41,13 @@ def main():
         choices=['qPCR', 'RNA-seq'], const='qPCR', default='RNA-seq',
         help='Type of your input genomics dataset')
     parser.add_argument('-o', '--output', nargs='?', type=str,
-        default=path.join(getcwd(), 'PyGiniClust_results'),
-        help="Specify PyGiniClust's output directory")
+        default=path.join(getcwd(), 'GiniClust_results'),
+        help="Specify GiniClust's output directory")
     parser.add_argument('input', type=str, widget='FileChooser',
         help='Name of the file to process')
     
     command = 'Rscript'
-    path2Rscript = pkg_resources.resource_string('PyGiniClust', 
+    path2Rscript = pkg_resources.resource_string('GiniClust', 
         'GiniClust_Main.R')
     args = parser.parse_args()
     
