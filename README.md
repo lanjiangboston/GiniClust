@@ -17,7 +17,7 @@ Please ensure that you have Python 2.7 in your environment. The graphical user i
 
 In addition, GiniClust relies on the following libraries:
 * ```Gooey```(version 0.9.2.3 or ulterior);
-* ```pkg_resources```.
+* ```setuptools``` (version 24.0.2 or subsequent).
 
 Those packages should be automatically installed or upgraded via an installation of GiniClust via ```pip```, as follows:
 * start a terminal session;
