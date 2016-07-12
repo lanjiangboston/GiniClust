@@ -2,8 +2,8 @@
 include README
 
 # R scripts
-include src/PyGiniClust/GiniClust_Main.R
-recursive-include src/PyGiniClust/Rfunction *
+include src/GiniClust/GiniClust_Main.R
+recursive-include src/GiniClust/Rfunction *
 
 # Miscellaneous
 include LICENSE
