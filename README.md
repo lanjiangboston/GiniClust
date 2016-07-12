@@ -1,6 +1,16 @@
 # PyGiniClust
 
-PyGiniClust is a clustering method implemented in R for detecting rare cell types from large-scale single-cell gene expression data. It can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. PyGiniClust is created and maintained by the Yuan Lab at DFCI.
+PyGiniClust is a clustering method implemented in Python and R for detecting rare cell-types from large-scale single-cell gene expression data. It can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. PyGiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
+
+Installation
+------------
+
+Please ensure that you have Python 2.7 in your environment. The graphical user interface of PyGiniClust relies on ```wxPython```, a Python wrapper for the cross-platform wxWidgets API. Instructions on how to install ```wxPython``` are available on the corresponding website. On Fedora Linux, using ```pip``` at the command-line interface worked just fine:
+```$ pip install wxPython```.
+In addition, PyGiniClust relies on the following libraries:
+
+
+
 
 Preparation
 -----------
