@@ -21,7 +21,7 @@ with open(path.join(here, 'README'), encoding = 'utf-8') as f:
     
 
 setup(name = 'GiniClust',
-      version = '0.1.2',
+      version = '0.1.7',
       
       description = "Detecting rare cell-types from single-cell "
           "gene expression data",
