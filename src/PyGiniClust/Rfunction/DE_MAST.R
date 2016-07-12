@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 ####################  MAST analysis for RNA seq ####################
 DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprimentID){
   #identifing differential genes between rare cell types and other cells
