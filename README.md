@@ -4,11 +4,9 @@ GiniClust is a clustering method implemented in Python and R for detecting rare 
 
 GiniClust can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. 
 
-GiniClust comes with a graphical user interface:
+GiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute and comes with a graphical user interface for convenience:
 
 ![alt tag](https://raw.githubusercontent.com/lanjiangboston/GiniClust/master/img/GiniClust_starting_screenshot.png)
-
-GiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
 
 Installation
 ------------
@@ -59,7 +57,9 @@ The simplest way to run GiniClust, is to:
 * start a terminal session;
 * run ```$ GiniClust```.
 
-A graphical user interface will spring up and direct you into choosing a file to process from your arborescence of directories, specify the type of data at hand (qPCR or RNA-seq), along with the name of the folder where you would like to store GiniClust's output (see the section below for more information about those files).
+A graphical user interface will spring up and direct you into choosing a file to process from your arborescence of directories, specify the type of data at hand (qPCR or RNA-seq), along with the name of the folder where you would like to store GiniClust's output (see the section below for more information about those files). A screenshot is provided herewith:
+
+![alt tag](https://raw.githubusercontent.com/lanjiangboston/GiniClust/master/img/GiniClust_selected_data_screenshot.png)
 
 Alternatively, GiniClust can be run directly as an R script at the command-line interface:
 
