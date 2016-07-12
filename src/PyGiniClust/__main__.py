@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-# GiniClust/src/GiniClust/__main__.py 
+# GiniClust/src/PyGiniClust/__main__.py 
 
 
 # Author: Gregory Giecold
@@ -47,7 +47,7 @@ def main():
         help='Name of the file to process')
     
     command = 'Rscript'
-    path2Rscript = pkg_resources.resource_string('GiniClust', 
+    path2Rscript = pkg_resources.resource_filename(__name__, 
         'GiniClust_Main.R')
     args = parser.parse_args()
     
