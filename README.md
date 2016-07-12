@@ -1,30 +1,30 @@
-# PyGiniClust
+# GiniClust
 
-PyGiniClust is a clustering method implemented in Python and R for detecting rare cell-types from large-scale single-cell gene expression data. 
+GiniClust is a clustering method implemented in Python and R for detecting rare cell-types from large-scale single-cell gene expression data. 
 
-PyGiniClust can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. 
+GiniClust can be applied to datasets originating from different platforms, such as multiplex qPCR data, traditional single-cell RNAseq or newly emerging UMI-based single-cell RNAseq, e.g. inDrops and Drop-seq. 
 
-PyGiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
+GiniClust is created and maintained by the GC Yuan Lab at Harvard University and the Dana-Farber Cancer Institute.
 
 Installation
 ------------
 
-Please ensure that you have Python 2.7 in your environment. The graphical user interface of PyGiniClust relies on ```wxPython```, a Python wrapper for the cross-platform wxWidgets API. Instructions on how to install ```wxPython``` are available on the corresponding website. On Fedora Linux, using ```pip``` at the command-line interface worked just fine:
+Please ensure that you have Python 2.7 in your environment. The graphical user interface of GiniClust relies on ```wxPython```, a Python wrapper for the cross-platform wxWidgets API. Instructions on how to install ```wxPython``` are available on the corresponding website. On Fedora Linux, using ```pip``` at the command-line interface worked just fine:
 
 ```$ pip install wxPython```.
 
-In addition, PyGiniClust relies on the following libraries:
+In addition, GiniClust relies on the following libraries:
 * ```Gooey```(version 0.9.2.3 or ulterior);
 * ```pkg_resources```.
 
-Those packages should be automatically installed or upgraded via an installation of PyGiniClust via ```pip```, as follows:
+Those packages should be automatically installed or upgraded via an installation of GiniClust via ```pip```, as follows:
 * start a terminal session;
-* run ```$ pip install PyGiniClust```.
+* run ```$ pip install GiniClust```.
 If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ``ìmport gooey, pkg_resources```.
 
-As for the R code at the core of much of PyGiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
+As for the R code at the core of much of GiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
 
-Besides, some users might experience issues installing another of PyGiniClust's dependencies: the MAST R package. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for detailed instructions.
+Besides, some users might experience issues installing another of GiniClust's dependencies: the MAST R package. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for detailed instructions.
 
 Input file format
 ----------------
@@ -95,7 +95,7 @@ Furthermore, a folder named 'Library' will be created, which includes a wealth o
 Reference
 ---------
 
-The PyGiniClust software was developped in support of a research project conducted at the GC Yuan Lab (Harvard University & DFCI). If you find it useful to your own investigations, please cite the following publication:
+The GiniClust software was developped in support of a research project conducted at the GC Yuan Lab (Harvard University & DFCI). If you find it useful to your own investigations, please cite the following publication:
 
 Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from single-cell gene expression data with Gini Index. Genome Biology (2016) 17:144 DOI: 10.1186/s13059-016-1010-4
 
