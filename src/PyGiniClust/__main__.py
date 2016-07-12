@@ -50,10 +50,6 @@ def main():
     path2Rscript = pkg_resources.resource_filename(__name__, 
         'GiniClust_Main.R')
     args = parser.parse_args()
-    
-    print(args.input)
-    print(args.type)
-    print(args.output)
         
     cmd = [command, path2Rscript]
     cmd += ['-f', args.input, '-t', args.type, '-o', args.output]
