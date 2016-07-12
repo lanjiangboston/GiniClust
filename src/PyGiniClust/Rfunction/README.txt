@@ -1,4 +1,4 @@
-The present README file provides a brief overview of the R scripts behind much of PyGiniClust's computations.
+The present README file provides a brief overview of the R scripts behind much of GiniClust's computations.
 
 - GiniClust_parameters.R: Parameter setting for Giniclust
 - GiniClust_packages.R: Installation, includiong loading additional R packages required for GiniClust
