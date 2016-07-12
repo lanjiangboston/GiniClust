@@ -21,7 +21,7 @@ with open(path.join(here, 'README'), encoding = 'utf-8') as f:
     
 
 setup(name = 'GiniClust',
-      version = '0.1.0',
+      version = '0.1.1',
       
       description = "Detecting rare cell-types from single-cell "
           "gene expression data",
@@ -59,7 +59,7 @@ setup(name = 'GiniClust',
                      'Topic :: Software Development :: User Interfaces', ],
                    
       packages = ['GiniClust'],
-      package_dir = {'GiniClust': 'src/PyGiniClust'},
+      package_dir = {'GiniClust': 'src/GiniClust'},
       include_package_data = True,
 
       keywords = "bioinformatics biology clustering genomics "
