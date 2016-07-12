@@ -12,7 +12,7 @@
 
 from __future__ import print_function
 
-from os import getcwd, makedirs, path
+from os import getcwd, path
 import subprocess
 
 try:
