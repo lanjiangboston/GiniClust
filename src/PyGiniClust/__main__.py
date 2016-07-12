@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-# GiniClust/src/PyGiniClust/__main__.py 
+# GiniClust/src/GiniClust/__main__.py 
 
 
 # Author: Gregory Giecold
