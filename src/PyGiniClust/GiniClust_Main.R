@@ -1,4 +1,4 @@
-# Authors: Lan Jiang
+# Author: Lan Jiang
 # Contact information: lan_jiang@hms.harvard.edu
 
 ############################### work directory ############################### 
