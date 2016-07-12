@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 ####################  t-test for qPCR data  ####################  
 DE_t_test <- function(ExprM.RawCounts.filter,rare.cells.list.all,c_membership,out.folder,exprimentID){
   pseudo.count = 1
