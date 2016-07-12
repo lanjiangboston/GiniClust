@@ -1,0 +1,5 @@
+# Documentation
+include README
+
+# Miscellaneous
+include LICENSE
