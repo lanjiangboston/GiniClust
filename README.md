@@ -51,9 +51,17 @@ you can take a look at one of our test datasets (stored in the ```sample_data```
 Usage
 -----
 
-Rscript Giniclust_Main.R [options]
+The simplest way to run GiniClust, is to:
+* start a terminal session;
+* run ```$ GiniClust```.
 
-Options:
+A graphical user interface will spring up and direct you into choosing a file to process from your arborescence of directories, specify the type of data at hand (qPCR or RNA-seq), along with the name of the folder where you would like to store GiniClust's output (see the section below for more information about those files).
+
+Alternatively, GiniClust can be run directly as an R script at the command-line interface:
+
+```Rscript Giniclust_Main.R [options]```
+
+You can specify the following options:
 - -f CHARACTER or --file=CHARACTER, input dataset file name 
 - -t CHARACTER or --type=CHARACTER, input dataset type: choose from 'qPCR' or 'RNA-seq' 
 - -o CHARACTER or --out=CHARACTER, output folder name [default=results]
