@@ -11,9 +11,9 @@ GiniClust is created and maintained by the GC Yuan Lab at Harvard University and
 Installation
 ------------
 
-Please ensure that you have Python 2.7 in your environment. The graphical user interface of GiniClust relies on ```wxPython```, a Python wrapper for the cross-platform wxWidgets API. Instructions on how to install ```wxPython``` are available on the corresponding website. On Fedora Linux, using ```pip``` at the command-line interface worked just fine:
+Please ensure that you have Python 2.7 in your environment. The graphical user interface of GiniClust relies on ```wxPython```, a Python wrapper for the cross-platform wxWidgets API. Instructions on how to install ```wxPython``` are available on the corresponding website. On Fedora Linux, the following at the command-line interface worked just fine:
 
-```$ pip install wxPython```.
+```$ sudo dnf install wxPython```.
 
 In addition, GiniClust relies on the following libraries:
 * ```Gooey```(version 0.9.2.3 or ulterior);
