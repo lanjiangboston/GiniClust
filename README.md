@@ -53,9 +53,15 @@ you can take a look at one of our test datasets (stored in the ```sample_data```
 Usage
 -----
 
-To run GiniClust, please download the GiniClust GitHub repository, unzip it and move to the extracted directory so that it becomes your current working directory. Then, proceed as follows:
+To run GiniClust, please download the GiniClust GitHub repository, unzip it and move to the extracted directory so that it becomes your current working directory. 
+
+Then, in a Linux environment, proceed as follows:
 * start a terminal session;
 * enter ```$ python GiniClust.py```.
+
+From an OS X or Windows environment, proceed as follows:
+* launch a terminal session;
+* enter ```$ pythonw GiniClust.py```.
 
 A graphical user interface will spring up and direct you into choosing a file to process from your arborescence of directories, specify the type of data at hand (qPCR or RNA-seq), along with the name of the folder where you would like to store GiniClust's output (see the section below for more information about those files). A screenshot is provided herewith:
 
@@ -115,7 +121,7 @@ Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from s
 Credits
 --------
 
-Lan Jiang (lan_jiang at hms dot harvard dot edu), the main developer of GiniClust, wrote the R scripts and started the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging and edited the README file. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface and edited the README file.
+Lan Jiang (lan_jiang at hms dot harvard dot edu), the main developer of GiniClust, wrote the R scripts and started the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging and edited the README file. Huidong Chen (hdchen at jimmy dot harvard dot edu) wrote the R command-line interface. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface.
 
 Maintainers: Lan Jiang (lan_jiang at hms dot harvard dot edu) and Qian Zhu (qzhu at princeton dot edu).
 
