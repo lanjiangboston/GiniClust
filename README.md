@@ -23,7 +23,7 @@ Those packages should be automatically installed or upgraded via a ```pip``` ins
 * start a terminal session;
 * run ```$ pip install Gooey --upgrade```.
 
-If in doubt, please check that those libraries got installed properly by importing them in your Python interpreter: ```import gooey, pkg_resources```.
+If in doubt, please check that those libraries got installed properly by trying to import them or some of their modules in your Python interpreter: ```>>> import gooey, pkg_resources```.
 
 As for the R code at the core of much of GiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
 
@@ -69,7 +69,7 @@ A graphical user interface will spring up and direct you into choosing a file to
 
 Alternatively, GiniClust can be run directly as an R script at the command-line interface:
 
-```Rscript Giniclust_Main.R [options]```
+```$ Rscript Giniclust_Main.R [options]```
 
 You can specify the following options:
 - -f CHARACTER or --file=CHARACTER, input dataset file name 
