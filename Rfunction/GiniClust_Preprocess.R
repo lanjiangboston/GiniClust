@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 #################### Preprocessing ####################
 GiniClust_Preprocess <- function(data.file,data.type,out.folder,exprimentID){
   subdir <- c(out.folder,paste(out.folder,'figures',sep = '/'))
