@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 #################### LOESS curve fitting #################### 
 GiniClust_Fitting <- function(data.type,ExprM.RawCounts.filter,out.folder,exprimentID){
   
