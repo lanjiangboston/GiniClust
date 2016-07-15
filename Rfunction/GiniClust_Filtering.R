@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 #################### Filter data ####################
 GiniClust_Filtering <- function(ExprM.RawCounts,ExprM.normCounts,out.folder,exprimentID){
   #expressed_cutoff:value lower than this value could be just noise.
