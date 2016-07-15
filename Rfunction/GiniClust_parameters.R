@@ -1,3 +1,7 @@
+# Authors: Lan Jiang; Huidong Chen
+# Contact information: lan_jiang@hms.harvard.edu; 
+#                      hdchen@jimmy.harvard.edu;
+
 #########################################################
 ### All the parameters used in Giniclust
 #########################################################
