@@ -1,3 +1,6 @@
+# Author: Lan Jiang
+# Contact information: lan_jiang@hms.harvard.edu
+
 #################### dbscan for clustering ####################
 GiniClust_Clustering <- function(data.type,ExprM.RawCounts.filter,GeneList.final,eps,MinPts,out.folder,exprimentID){
   
