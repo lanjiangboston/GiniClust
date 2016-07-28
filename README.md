@@ -75,6 +75,8 @@ You can specify the following options:
 - -f CHARACTER or --file=CHARACTER, input dataset file name 
 - -t CHARACTER or --type=CHARACTER, input dataset type: choose from 'qPCR' or 'RNA-seq' 
 - -o CHARACTER or --out=CHARACTER, output folder name [default=results]
+- -e DOUBLE or --epsilon=DOUBLE, DBSCAN epsilon parameter qPCR:[default=0.25],RNA-seq:[default=0.5]
+- -m INTEGER or --minPts=INTEGER, DBSCAN minPts parameter qPCR:[default=5],RNA-seq:[default=3]
 - -h or --help, Show help message and exit
 
 For example, the following command is used to analyze the 'Data_GBM.csv' dataset
