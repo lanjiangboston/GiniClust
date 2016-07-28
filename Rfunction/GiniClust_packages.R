@@ -41,9 +41,6 @@ if (!suppressWarnings(require("vegan",quietly = TRUE))) {
 if (!suppressWarnings(require("data.table",quietly = TRUE))) {
    install.packages("data.table", dependencies = TRUE, repos="http://cran.r-project.org")
    }
-if (!suppressWarnings(require("plyr",quietly = TRUE))) {
-   install.packages("plyr", dependencies = TRUE, repos="http://cran.r-project.org")
-   }
 if (!suppressWarnings(require("reshape",quietly = TRUE))) {
    install.packages("reshape", dependencies = TRUE, repos="http://cran.r-project.org")
    }
@@ -74,7 +71,6 @@ library(session)
 library(Matrix)
 library(vegan)
 library(data.table)
-library(plyr)
 library(reshape)
 library(abind)
 library(drc)
