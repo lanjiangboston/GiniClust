@@ -4,10 +4,10 @@
 # GiniClust/src/GiniClust/__main__.py 
 
 
-# Author: Gregory Giecold
+# Author: Gregory Giecold; Huidong Chen
 # Maintainer: Qian Zhu
 # Affiliations: Harvard University & Princeton University
-# Contact information: ggiecold@jimmy.harvard.edu; qzhu@princeton.edu
+# Contact information: ggiecold@jimmy.harvard.edu; qzhu@princeton.edu; hdchen@jimmy.harvard.edu
 
 
 from __future__ import print_function
@@ -40,7 +40,7 @@ def main():
     subparsers = parser.add_subparsers(dest='datatype', 
         help="Type of your input genomics dataset")
     
-    qPCR_parser = subparsers.add_parser('pcr')
+    qPCR_parser = subparsers.add_parser('qpcr')
     qPCR_parser.add_argument('Input', type=str, widget='FileChooser',
         help='Select a file to process:')
     qPCR_parser.add_argument('-e', '--epsilon', nargs='?',
@@ -71,13 +71,13 @@ def main():
 
     args = parser.parse_args()
     
-    if args.datatype == 'pcr':
+    if args.datatype == 'qpcr':
         datatype_str = 'qPCR'
     else:
         datatype_str = 'RNA-seq'
         
     cmd = [command, path2Rscript]
-    cmd += ['-f', args.Input, '-t', datatype_str, '-o', args.Output]
+    cmd += ['-f', args.Input, '-t', datatype_str, '-o', args.Output, '-e', str(args.epsilon), '-m', str(args.minPts)]
     subprocess.check_output(cmd, universal_newlines=True)
 
 
