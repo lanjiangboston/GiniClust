@@ -26,9 +26,9 @@ option_list = list(
   make_option(c("-o", "--out"), type="character", default="results", 
               help="output folder name [default= %default]", metavar="character"),
   make_option(c("-e", "--epsilon"), type="double", default=NULL, 
-            help="DBSCAN epsilon parameter", metavar="double"),
+            help="DBSCAN epsilon parameter qPCR:[default=0.25],RNA-seq:[default=0.5]", metavar="double"),
   make_option(c("-m", "--minPts"), type="integer", default=NULL, 
-              help="DBSCAN minPts parameter", metavar="integer")
+              help="DBSCAN minPts parameter qPCR:[default=5],RNA-seq:[default=3]", metavar="integer")
 )
 opt_parser = OptionParser(option_list=option_list)
 opt = parse_args(opt_parser)
