@@ -4,10 +4,9 @@
 # GiniClust/src/GiniClust/__main__.py 
 
 
-# Author: Gregory Giecold; Huidong Chen
-# Maintainer: Qian Zhu
-# Affiliations: Harvard University & Princeton University
-# Contact information: ggiecold@jimmy.harvard.edu; qzhu@princeton.edu; hdchen@jimmy.harvard.edu
+# Authors: Gregory Giecold; Huidong Chen
+# Affiliation: Harvard University
+# Contact information: ggiecold@jimmy.harvard.edu; hdchen@jimmy.harvard.edu
 
 
 from __future__ import print_function
