@@ -1,7 +1,6 @@
-# Authors: Lan Jiang; Huidong Chen; Gregory Giecold
+# Authors: Lan Jiang; Huidong Chen
 # Contact information: lan_jiang@hms.harvard.edu; 
 #                      hdchen@jimmy.harvard.edu; 
-#                      ggiecold@jimmy.harvard.edu  
 
 ############################### work directory ############################### 
 workdir = getwd() 
