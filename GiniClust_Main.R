@@ -68,7 +68,6 @@ ExprM.normCounts = ExprM.Results$norm
 source("Rfunction/GiniClust_Filtering.R")
 ExprM.Results.filter = GiniClust_Filtering(ExprM.RawCounts,ExprM.normCounts,out.folder,exprimentID)
 ExprM.RawCounts.filter = ExprM.Results.filter$raw
-ExprM.normCounts.filter = ExprM.Results.filter$norm 
 
 #gene selection
 source("Rfunction/GiniClust_Fitting.R")
@@ -93,9 +92,7 @@ print(rare.cells.list.all)
 #Analysis of differentially expressed genes 
 if(data.type == 'RNA-seq'){
   source("Rfunction/DE_MAST.R")
-  cluster_lrTest.table = DE_MAST(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprimentID)
-  source("Rfunction/DE_MAST_figures.R")
-  DE_MAST_figures(rare.cells.list.all,cluster_lrTest.table,clustering_membership_r,out.folder,exprimentID)
+  DE_MAST(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprimentID)
 }
 if(data.type == 'qPCR'){
   source("Rfunction/DE_t_test.R")
