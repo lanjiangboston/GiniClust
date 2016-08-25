@@ -111,6 +111,12 @@ GiniClust_Clustering <- function(data.type,ExprM.RawCounts.filter,GeneList.final
     clustering_membership_r[,1] = as.character(clustering_membership_r[,1])
     clustering_membership_r[,2] = as.character(clustering_membership_r[,2])
     write.csv(clustering_membership_r, file=paste(out.folder, "/", exprimentID,"_clusterID.csv", sep=""))
+    file.create(paste(out.folder, "/", exprimentID,"_rare_cells_list.txt", sep=""))
+    lapply(names(rare.cells.list.all), function(x){
+      write(paste(x,' :',sep = ""),paste(out.folder, "/", exprimentID,"_rare_cells_list.txt", sep=""),
+            append=TRUE)
+      write(c(rare.cells.list.all[[x]],'\n'),paste(out.folder, "/", exprimentID,"_rare_cells_list.txt", sep=""),
+            append=TRUE,ncolumns=20,sep=', ')})  
     return(list('cell_cell_dist' = cell.cell.jaccard.distance,'c_membership' = c_membership,
                 'clustering_membership_r' = clustering_membership_r,'rare.cell' = rare.cells.list.all))
   }
@@ -161,6 +167,12 @@ GiniClust_Clustering <- function(data.type,ExprM.RawCounts.filter,GeneList.final
     clustering_membership_r[,1] = as.character(clustering_membership_r[,1])
     clustering_membership_r[,2] = as.character(clustering_membership_r[,2])
     write.csv(clustering_membership_r, file=paste(out.folder, "/", exprimentID,"_clusterID.csv", sep=""))
+    file.create(paste(out.folder, "/", exprimentID,"_rare_cells_list.txt", sep=""))
+    lapply(names(rare.cells.list.all), function(x){
+      write(paste(x,' :',sep = ""),paste(out.folder, "/", exprimentID,"_rare_cells_list.txt", sep=""),
+            append=TRUE)
+      write(c(rare.cells.list.all[[x]],'\n'),paste(out.folder, "/", exprimentID,"_rare_cells_list.txt", sep=""),
+            append=TRUE,ncolumns=20,sep=', ')})
     return(list('cell_cell_dist' = cell.cell.cor.distance,'c_membership' = c_membership,
                 'clustering_membership_r' = clustering_membership_r,'rare.cell' = rare.cells.list.all))
   }
