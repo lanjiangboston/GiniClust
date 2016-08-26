@@ -72,6 +72,7 @@ DE_t_test <- function(ExprM.RawCounts.filter,rare.cells.list.all,c_membership,ou
     differential.r = differential.r[rev(order(differential.r$log2fold_change)), ]
     colnames(differential.r) = c(paste("log2.mean.", rare.cluster, sep=""), "log2.mean.Cluster_1", "t-test_pvalue", "log2fold_change" )
     write.csv(differential.r, file=paste(out.folder, "/", rare.cluster, ".diff.gene.t-test.results.csv", sep=""))
+    write(overlapGenes, file=paste(out.folder, "/",rare.cluster,".overlap_genes.txt", sep=""))
   }
 }
 ####################      End     ####################
