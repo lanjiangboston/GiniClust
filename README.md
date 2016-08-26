@@ -101,9 +101,11 @@ The output directory specified by the user at the graphical user interface will 
 * Gini_related_table_qPCR.csv: the table related with Gini index for qPCR data
 * Dataname_clusterID.csv: clustering result, the first column represents cell IDs and the second column is the corresponding cluster result for each cell.
 * Dataname_Rtnse_coord2.csv: coordinates of cells in tSNE plot 
+* Dataname_rare_cells_list.txt: the clusters of rare cells detected by Giniclust
 * Dataname_bi-directional.GiniIndexTable.csv: For qPCR data the table of bidirectional Gini index
 * RareCluster_lrTest.csv: lrTest results by MAST analysis for RNA-seq data 
-* RareCluster.diff.gene.t-test.results.csv t-test results for qPCR data
+* RareCluster.diff.gene.t-test.results.csv: t-test results for qPCR data
+* RareCluster.overlap_genes.txt: overlap genes between the selected high Gini genes and DE genes in rare cluster
 * sub-folder 'figures':
  - Dataname_histogram of Normalized.Gini.Socre.pdf: histogram of estimated p-values based on a normal distribution approximation for genes
  - Dataname_smoothScatter_pvalue_gene.pdf: the smoothScatter plot in which the red points are the selected high Gini genes according to specified cutoff
