@@ -160,7 +160,7 @@ GiniClust_Fitting <- function(data.type,ExprM.RawCounts.filter,out.folder,exprim
     
   }else{
     Gini_related_table <- ExprM.Stat2
-    Gini_related_table_RNAseq <- Gini_related_table[,c("Gini", "log2.Maxs", "Norm.Gini2", "Gini.pvalue")]
+    Gini_related_table_RNAseq <- Gini_related_table[,c( "log2.Maxs","Gini", "Norm.Gini2", "Gini.pvalue")]
     Gini_related_table_RNAseq <- cbind(rownames(Gini_related_table_RNAseq ), Gini_related_table_RNAseq )
     colnames(Gini_related_table_RNAseq) <- c("Gene", "log2( Max Expression Level )", "Raw Gini Index", "Normalized Gini Index", "p-value")
     write.csv(Gini_related_table_RNAseq, file=paste(out.folder,"/Gini_related_table_RNA-seq.csv",sep=""))
