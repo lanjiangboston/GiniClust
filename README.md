@@ -34,7 +34,7 @@ Input file format
 
 The input file is a gene expression matrix in comma-separated value (csv) format.
 
-Specifically, for qPCR data, each entry is log2 gene expression level; for RNAseq data, each entry is UMI-Count/Cell or Raw-Read-Count/Cell. The first row contains cell IDs. The first column contains unique gene names. 
+Specifically, for qPCR data, each row is log2 gene expression level; for RNAseq data, each row is UMI-Count/Cell or Raw-Read-Count/Cell (Note: log2 transformed RNA-seq data for Giniclust may not work! We suggest that user use featureCounts from http://subread.sourceforge.net/ or htseq-count from http://www-huber.embl.de/users/anders/HTSeq/doc/counting.html to get raw reads counts ).  The first row contains cell IDs. The first column contains unique gene names. 
 
 For example, in R 
 ```R
