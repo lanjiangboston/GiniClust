@@ -3,6 +3,7 @@
 
 #################### Visulization using tsne #################### 
 GiniClust_tSNE <- function(data.type,c_membership,cell.cell.distance,perplexity,out.folder,exprimentID){
+  mycols <- c("grey85",rainbow(length(unique(c_membership))-1)) 
   if(data.type == 'RNA-seq'){
     seed = 10
     set.seed(seed)  # Set a seed if you want reproducible results
@@ -22,8 +23,6 @@ GiniClust_tSNE <- function(data.type,c_membership,cell.cell.distance,perplexity,
   if(data.type == 'qPCR'){
     seed = 7
     set.seed(seed) # Set a seed if you want reproducible results
-    
-    mycols = c("grey85", "red", "mediumblue", "yellowgreen", "gold4", "orange", "purple1", "black")  #figure_color mannual 
     Rtsne_map <- Rtsne(cell.cell.distance, is_distance = TRUE, pca = FALSE,  max_iter = 1000) #the result is idependent with max_iter
     pdf(file=paste(out.folder, "/figures/", exprimentID, "_tsne_plot.pdf", sep=""), width = 8, height =8, useDingbats = FALSE)
     plot(Rtsne_map$Y[,1],Rtsne_map$Y[,2],col=mycols[as.integer(c_membership)], pch=16, xlab="tSNE_1", ylab="tSNE_2", cex=1, main="")
