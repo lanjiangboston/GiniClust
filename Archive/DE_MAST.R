@@ -1,4 +1,4 @@
-####################  MAST analysis for RNA seq ####################
+####################  MAST analysis for RNA seq (for the old version of MAST package) ####################
 DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprimentID){
   #identifing differential genes between rare cell types and other cells
   
