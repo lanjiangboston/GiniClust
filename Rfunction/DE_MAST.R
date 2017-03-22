@@ -10,6 +10,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
   #' output is three column, log2(mean.1), log2(mean.2), log2_foldchange.
   ####### function data log2 mean, and log2 fold changle ######
   #install.packages("varhandle")
+  
   if (!suppressWarnings(require("MAST",quietly = TRUE))) {
     if(!suppressWarnings(require("RCurl",quietly = TRUE))) {
       install.packages('RCurl', dependencies = TRUE, repos="http://cran.r-project.org")
@@ -175,6 +176,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
     
     # barplot visilization of gene expression for individual cells in orginal order .
     genelist.forbarplot = intersect( rownames(cluster_lrTest.table[cluster_lrTest.table$Auc>0.98,]), GeneList.final )
+    mycols <- c("grey85",rainbow(length(unique(c_membership))-1))   
     
     if(length(overlapGenes) > 0)
     {
