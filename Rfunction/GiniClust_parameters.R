@@ -17,8 +17,6 @@ if(data.type == 'RNA-seq'){
   span                 = 0.9                                              # parameter for LOESS fitting
   outlier_remove       = 0.75                                             # parameter for LOESS fitting
   Gamma                = 0.9                                              # parameter for clustering
-  mycols               = c("grey50","green","yellow","red","blue",
-                           'cyan','brown','purple','pink','orange')       # color setting for tSNE plot
   diff.cutoff          = 1                                                # MAST analysis, filter gene don't have high log2_foldchange to reduce gene num
   lr.p_value_cutoff    = 1e-5                                             # MAST analysis, pvalue cutoff to identify differential expressed gene
   CountsForNormalized  = 100000                                           
@@ -47,8 +45,6 @@ if(data.type == 'qPCR'){
   span                 = 0.9                                              # parameter for LOESS fitting
   outlier_remove       = 0.75                                             # parameter for LOESS fitting
   Gamma                = 0.9                                              # parameter for clustering
-  mycols               = c("grey50","green","yellow","red","blue",
-                           'cyan','brown','purple','pink','orange')       # color setting for tSNE plot
   diff.cutoff          = 1                                                # MAST analysis, filter gene don't have high log2_foldchange to reduce gene num
   lr.p_value_cutoff    = 1e-5                                             # MAST analysis, pvalue cutoff to identify differential expressed gene
   CountsForNormalized  = 100000                                           # not used
