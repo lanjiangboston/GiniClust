@@ -27,7 +27,7 @@ If in doubt, please check that those libraries got installed properly by trying 
 
 As for the R code at the core of much of GiniClust`s computations, for MAC and WINDOWS only the official R installation file is supported and tested. Using other installation methods, such as brew, may lead to running error.
 
-Besides, some users might experience issues installing another of GiniClust's dependencies: the MAST R package. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for detailed instructions.
+Besides, some users might experience issues installing another of GiniClust's dependencies: the MAST R package. If this happens, please visit the MAST website (https://github.com/RGLab/MAST) for detailed instructions. We recommend that users upgrade MAST package to the newest version. If you are using an old version, you may need to replace the file DE_MAST.R in 'Rfunction' by DE_MAST.R in 'Archive'.
 
 Input file format
 ----------------
