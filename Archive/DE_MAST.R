@@ -174,6 +174,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
     
     # barplot visilization of gene expression for individual cells in orginal order .
     genelist.forbarplot = intersect( rownames(cluster_lrTest.table[cluster_lrTest.table$Auc>0.98,]), GeneList.final )
+    mycols <- c("grey85",rainbow(length(unique(c_membership))-1))   
     
     if(length(overlapGenes) > 0)
     {
