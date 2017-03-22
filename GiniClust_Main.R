@@ -62,7 +62,6 @@ source("Rfunction/GiniClust_packages.R")
 source("Rfunction/GiniClust_Preprocess.R")
 ExprM.Results = GiniClust_Preprocess(data.file,data.type,out.folder,exprimentID)
 ExprM.RawCounts = ExprM.Results$raw
-ExprM.normCounts = ExprM.Results$norm
 
 #filtering
 source("Rfunction/GiniClust_Filtering.R")
