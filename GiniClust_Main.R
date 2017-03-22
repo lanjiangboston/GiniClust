@@ -65,7 +65,7 @@ ExprM.RawCounts = ExprM.Results$raw
 
 #filtering
 source("Rfunction/GiniClust_Filtering.R")
-ExprM.Results.filter = GiniClust_Filtering(ExprM.RawCounts,ExprM.normCounts,out.folder,exprimentID)
+ExprM.Results.filter = GiniClust_Filtering(ExprM.RawCounts,out.folder,exprimentID)
 ExprM.RawCounts.filter = ExprM.Results.filter$raw
 
 #gene selection
