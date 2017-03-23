@@ -83,8 +83,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
 
   #input
   pseudo.count = 0.1
-  #data.used.log2   <- log2(ExprM.RawCounts.filter+pseudo.count)  #RNA-seq data
-  data.used.log2 <- ExprM.RawCounts.filter
+  data.used.log2   <- log2(ExprM.RawCounts.filter+pseudo.count)  #RNA-seq data
   ##loop for all rare cell type
   for(rare.cluster in names(rare.cells.list.all) ){
     
