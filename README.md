@@ -125,7 +125,7 @@ Jiang L, Chen H, Pinello L, Yuan GC. GiniClust: Detecting rare cell types from s
 Credits
 --------
 
-Lan Jiang (lan_jiang at hms dot harvard dot edu), the main developer of GiniClust, wrote the R scripts and started the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging and edited the README file. Huidong Chen (hdchen at jimmy dot harvard dot edu) wrote the R command-line interface and contributed to the graphical user interface. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface.
+Lan Jiang (lan_jiang at hms dot harvard dot edu), the main developer of GiniClust, wrote the R scripts and started the README file. Gregory Giecold (ggiecold at jimmy dot harvard dot edu) developed the graphical user interface, reorganized the R packaging and edited the README file. Huidong Chen (hdchen at jimmy dot harvard dot edu) wrote the R command-line interface and contributed to the graphical user interface. Qian Zhu (qzhu at princeton dot edu) contributed to the graphical user interface. We would like to give special thanks to Luca Pinello who introduced the Gini-index and advised on the development and implementation of the GiniClust software.
 
 Maintainers: Lan Jiang (lan_jiang at hms dot harvard dot edu), Huidong Chen (hdchen at jimmy do harvard dot edu) and Qian Zhu (qzhu at princeton dot edu).
 
