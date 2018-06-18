@@ -13,16 +13,16 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
   
   if (!suppressWarnings(require("MAST",quietly = TRUE))) {
     if(!suppressWarnings(require("RCurl",quietly = TRUE))) {
-      install.packages('RCurl', dependencies = TRUE, repos="http://cran.r-project.org")
+      install.packages('RCurl', dependencies = TRUE, repos="https://cran.r-project.org")
     }
     library(RCurl)
     library(httr)
     set_config( config( ssl_verifypeer = 0L ) )
     if(!suppressWarnings(require("devtools",quietly = TRUE))) {
-      install.packages('devtools', dependencies = TRUE, repos="http://cran.r-project.org")
+      install.packages('devtools', dependencies = TRUE, repos="https://cran.r-project.org")
     }
     library(devtools)
-    source("http://bioconductor.org/biocLite.R")
+    source("https://bioconductor.org/biocLite.R")
     biocLite("Biobase",suppressUpdates=TRUE,suppressAutoUpdate=TRUE)
     biocLite("BiocGenerics",suppressUpdates=TRUE,suppressAutoUpdate=TRUE)
     
@@ -33,7 +33,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
   library(MAST)
 
   if (!suppressWarnings(require("varhandle",quietly = TRUE))) {
-    install.packages("varhandle", dependencies = TRUE, repos="http://cran.r-project.org")
+    install.packages("varhandle", dependencies = TRUE, repos="https://cran.r-project.org")
   }
   library(varhandle)
   Mean.in.log2space=function(x,pseudo.count) {
@@ -63,7 +63,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
   ####### function m.auc  ######
   #install.packages("ROCR")
   if (!suppressWarnings(require("ROCR",quietly = TRUE))) {
-    install.packages("ROCR", dependencies = TRUE, repos="http://cran.r-project.org")
+    install.packages("ROCR", dependencies = TRUE, repos="https://cran.r-project.org")
   }
   library("ROCR")
   v.auc = function(data.v,group.v) {
@@ -155,7 +155,7 @@ DE_MAST <- function(ExprM.RawCounts.filter,rare.cells.list.all,out.folder,exprim
     
     # VennDiagram
     if (!suppressWarnings(require("VennDiagram",quietly = TRUE))) {
-      install.packages("VennDiagram", dependencies = TRUE, repos="http://cran.r-project.org")
+      install.packages("VennDiagram", dependencies = TRUE, repos="https://cran.r-project.org")
     }
     library(VennDiagram)
     pdf(paste(out.folder,"/figures/", exprimentID,"_",rare.cluster,"_diff_gene_overlap.pdf", sep=""), height = 6, width = 6, useDingbats = FALSE)
